@@ -1,0 +1,20 @@
+# finding prime numbers from 1 to 100
+
+list_a = []
+
+for i in range(2, 101) :
+    list_a.append(i)
+    
+prime_numbers = []   
+for a in list_a :
+    prime = False
+    for k in range(2, a):
+        if (a%k) == 0 :
+            prime = True
+            break
+    if not(prime) :
+        prime_numbers.append(a)
+
+
+            
+print(prime_numbers)      
