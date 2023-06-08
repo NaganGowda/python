@@ -14,7 +14,14 @@ for a in list_a :
             break
     if not(prime) :
         prime_numbers.append(a)
-
-
-            
 print(prime_numbers)      
+
+
+#star pyramid pattern
+
+n = 10 
+
+for i in range(1, n+1) :
+    p = "* " * i
+    left_space = " " * (n-i)
+    print(left_space + p)        
